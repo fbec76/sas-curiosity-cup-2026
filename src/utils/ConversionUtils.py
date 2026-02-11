@@ -36,3 +36,18 @@ def convert_weight_unit(val, input_mode="lbs", output_mode="kg"):
         return float(val) / 0.453592
     warning("Unknown weight conversion mode: {} to {}. Using value as is.".format(input_mode, output_mode))
     return float(val)
+
+
+def convert_human_time(val, output_mode="min"):
+    if pd.isna(val) or str(val).strip() in ("-", "", "NaN", "NA"):
+        return 0
+    val = str(val).replace("~", "")
+    if output_mode == "min":
+        if "hours" in val:
+            value = float(val.strip().replace('hours', '').strip())
+            minutes = value * 60
+            return float(minutes)
+        if "minutes" in val:
+            return float(val.replace("minutes", "").strip())
+    warning("Unknown time conversion mode: {}. Using value as is.".format(output_mode))
+    return float(val)

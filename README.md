@@ -1,6 +1,10 @@
 # sas-curiosity-cup-2026
 # NBA Hit/Miss Classification Project Workflow (SAS)  
 
+- Shots Dataset: https://github.com/DomSamangy/NBA_Shots_04_25/tree/main
+- Schedule Metrics Dataset: https://github.com/josedv82/public_sport_science_datasets/tree/main/NBA%20Schedule%20Metrics
+- Physical and Anthropometric Dataset: https://github.com/josedv82/public_sport_science_datasets/tree/main/NBA%20Combine
+
 ## 1. Overview
 
 **Goal:** Compare different classification models (Logistic Regression, Decision Tree, Random Forest, possibly BMM) for predicting NBA shot success (hit/miss) using player, team, game, and location data in SAS.
