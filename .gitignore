@@ -1,4 +1,3 @@
-datasets/processed/*.parquet
 
 .RData
 .Rhistory
